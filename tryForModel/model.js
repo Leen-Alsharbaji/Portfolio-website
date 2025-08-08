@@ -8,8 +8,9 @@ const di = document.getElementById("model-container");
 var modelpath , positionX,positionY, positionZ,rotationX, rotationY, rotationZ , scaleX, scaleY, scaleZ;
 console.log("im working babyyy");
 init();
-loadModel('tryForModel/stand.glb' , -1.35,0.01,-3 ,0,0,0,1,0.5,1);
-loadModel('tryForModel/ghoswithtexture1111t.gltf',0,0.2,0,0,-1.3,0,1,1,1);
+loadModel('tryForModel/stand.glb' , -2,0.4,-2.5,0,0,0,1.2,1,1);
+loadModel('tryForModel/ghoswithtexture1111t.gltf',-1,0,-3,0.1,-1.7,0,2.5,2.5,2.5);
+//loadModel ('tryForModel/sunflower1.glb',5,5,2,0,0,0,1,1,1);
 animate();
 
 function init() {
@@ -17,7 +18,7 @@ function init() {
     scene.background = null;
 
     camera = new THREE.PerspectiveCamera(60, di.clientWidth / di.clientHeight, 0.1, 100);
-    camera.position.set(0, 2.3, 5);
+    camera.position.set(-2, 3.2, 5.7);
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(window.devicePixelRatio);
@@ -26,17 +27,22 @@ function init() {
     renderer.physicallyCorrectLights = true;
     di.appendChild(renderer.domElement);
 
-    // Enable shadow maps in the renderer
-renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap; // optional, for softer shadows
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap; // optional, for softer shadows
 
-    const light = new THREE.DirectionalLight(0xffffff, 1.5);
-    light.position.set(20, 10, 20);
-    light.castShadow = true; // <--- IMPORTANT
-    scene.add(light);
-    scene.add(new THREE.AmbientLight(0xF2EAE4));
-    const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444445, 0.5);
-    scene.add(hemiLight);
+    // Directional light — softened and tinted slightly pink
+const light = new THREE.DirectionalLight(0xffffff, 2);
+light.position.set(-50, 10, 50);
+light.castShadow = true;
+scene.add(light);
+
+// Ambient Light – neutral soft fill (just a hint of pinkish warmth)
+const ambientLight = new THREE.AmbientLight(0xF2F0F5, 0.6);
+scene.add(ambientLight);
+
+// Hemisphere Light – sky light cool white, ground light gentle gray-mauve
+const hemiLight = new THREE.HemisphereLight(0xeeeeff, 0xcfcad8, 0.4);
+scene.add(hemiLight);
 
     // Handle window resize
     window.addEventListener('resize', onWindowResize);

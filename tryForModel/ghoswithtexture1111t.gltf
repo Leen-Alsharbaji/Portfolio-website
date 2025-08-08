@@ -225,7 +225,7 @@
 						"TEXCOORD_1":27
 					},
 					"indices":28,
-					"material":3
+					"material":6
 				},
 				{
 					"attributes":{
@@ -235,7 +235,7 @@
 						"TEXCOORD_1":32
 					},
 					"indices":33,
-					"material":4
+					"material":6
 				},
 				{
 					"attributes":{
@@ -245,7 +245,7 @@
 						"TEXCOORD_1":37
 					},
 					"indices":38,
-					"material":5
+					"material":6
 				}
 			]
 		}

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
-    <title>title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
- <!--get font-->
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
-<!-- Import Three.js -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!--get font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+  <!-- Import Three.js -->
   <script type="importmap">
   {
     "imports": {
@@ -18,165 +23,123 @@
     }
   }
   </script>
+
+  <!--get jquery-->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
+
 <body>
   <div class="page-layout">
-<header class="w3-container">
-  <nav class="navbar navbar-expand-lg"  data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header class="w3-container">
+      <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="..." alt="Logog" width="40" height="45" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <!-- ms-auto is Bootstrap's magic for "margin-start: auto" -->
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <!-- ms-auto is Bootstrap's magic for "margin-start: auto" -->
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <div class="mainUpperhalf">
+
+
+      <div class="model-container" id="model-container">
+        <div class="selfIntro">
+          <p id="typewriter"></p>
+        </div>
+
       </div>
+
+
+
+
     </div>
-  </nav>
-</header>
-<div class="mainUpperhalf">
+    <div class="projects">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-container">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-container">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
- 
-<div class="model-container" id="model-container">
-    <div class="selfIntro">
-<p id="selfIntroText"> <b>Hey there! What brings you here?</b> 
- <br>anyway, welcome. Wanna see some cool stuff?
-Go ahead—click around, you might just like what you find.</p>
- </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-</div>
 
 
- 
 
-</div>
-<div class="projects">
-<div id="carouselExampleControls" class="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 1</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 2</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 3</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 4</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 5</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 6</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 7</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 8</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title 9</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
-
-
-
-
-
-<!--get 3D model -->
-<script type="module" src="tryForModel/model.js"></script>  
+    <!--get 3D model -->
+    <script type="module" src="tryForModel/model.js"></script>
+    <!--carousel code-->
+    <script src="typeWriterEffect.js"></script>
 </body>
+
 </html>
