@@ -1,0 +1,11 @@
+Model Information:
+* title:	glass or reflection cube?
+* source:	https://sketchfab.com/3d-models/glass-or-reflection-cube-564e95c9057846f3816ca957690911e1
+* author:	Omair1962 (https://sketchfab.com/Omair1962)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "glass or reflection cube?" (https://sketchfab.com/3d-models/glass-or-reflection-cube-564e95c9057846f3816ca957690911e1) by Omair1962 (https://sketchfab.com/Omair1962) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

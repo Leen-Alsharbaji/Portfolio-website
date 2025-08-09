@@ -62,7 +62,7 @@ html, body {
   color: #4c3f57;
   line-height: 1.5;
   opacity: 1;
-
+  text-shadow: 2px 2px 4px #bbb8b8;
 }
 
 
@@ -113,8 +113,15 @@ height: 100%;
 
 }
 .card-body{
+
    padding-right: vh;
    padding-left: 2vh;
 
+}
+.card {
+  border-radius: 15% !important;
+  
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
 }
 
