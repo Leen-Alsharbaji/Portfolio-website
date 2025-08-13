@@ -1,11 +1,1 @@
-body {
-    margin: 0;
-    overflow: hidden;
-}
 
-#model-container {
-    background-image: radial-gradient(circle,#CDCEC9 20%,#605f63);
-    width: 100vw;
-    height: 40vh;
-    position: relative;
-}

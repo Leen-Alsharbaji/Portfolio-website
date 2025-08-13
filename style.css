@@ -1,18 +1,34 @@
 html, body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
   height: 100%;
   margin: 0;
   overflow: hidden;
-   font-family: "Delius Swash Caps", cursive !important;
+  background: linear-gradient(to right, #dcd8f0, #d5c9d8, #fffafc);
+  background-size: 200% 200%;
+  transition: background-position 1s ease;
   
 }
+body.gradient-left {
+  background-position: left center;
+}
+
+body.gradient-right {
+  background-position: right center;
+}
+
 .page-layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-.navbar {
-  background: linear-gradient(to right, #dcd8f0, #d5c9d8, #fffafc);
+
+.phoneCards{
+  display: none;
 }
+
+
 .navbar a {
   color:#3a2e3f !important;
 }
@@ -20,22 +36,17 @@ html, body {
   display: flex;
   flex-direction: row;
   flex: 1;
-  /* background-color: blue; */
-  height: 50vh; /* or 100% if you want it to fill the upper half */
+  height: 50vh;
   width: 100%;
 }
 .model-container {
   position: relative;
- background: linear-gradient(to right, #dcd8f0, #d5c9d8, #fffafc);
-
-
   width: 100%;
   height: 45vh;
   overflow: hidden;
 }
 
 .model-container canvas {
-  display: block;
   width: 100% !important;
   height: 100% !important;
   position: absolute;
@@ -46,11 +57,11 @@ html, body {
 .selfIntro{
   position: absolute;
   z-index: 2;
-  width: 30%;
+  width: 45%;
   height: 100%;
   padding-top: 5vh;
-  padding-bottom: 2vh;
-  padding-left: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 7vh;
   flex-direction: column;
   background: transparent;
   display: flex;
@@ -58,35 +69,27 @@ html, body {
 }
 
 .selfIntro p {
-  font-size: 1.5rem;
-  color: #4c3f57;
+  font-size: 2rem;
+  color: #4b4453;
   line-height: 1.5;
   opacity: 1;
   text-shadow: 2px 2px 4px #bbb8b8;
 }
 
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
 
 .projects {
   flex-grow: 1;
   overflow-y: auto;
-  background: linear-gradient(to right, #dcd8f0, #d5c9d8, #fffafc);
   padding: 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: row !important;
-  
+  scroll-snap-type: x mandatory;
+
 }
-#carouselExample{
+#myCarousel{
 display: flex;
 flex-grow: 1;
 flex-direction: row;
@@ -110,18 +113,116 @@ height: 100%;
   justify-content: space-evenly ;
   width: 100%;
   height: 100%;
+  scroll-snap-type: x mandatory; 
+   overflow: visible;
 
 }
 .card-body{
-
-   padding-right: vh;
+  
+   padding-right: 2vh;
    padding-left: 2vh;
 
 }
-.card {
+.card 
+{
   border-radius: 15% !important;
-  
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
+  align-items: center;
+  background-color:transparent !important;
+  font-size: large;
+   scroll-snap-align: start;
+}
+.card img {
+  padding-top: 2vh;
+  width: 80%;
+  height: auto;
+}
+.nunito-regular {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
+@media (max-width: 900px) {
+
+
+.mainUpperhalf {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height:50%;
+  width: 100%;
+ 
+
+}
+  .model-container {
+    width: 100%;
+    height: 50vh;
+    position: relative; 
+   
+
+  }
+
+  .model-container canvas {
+    width: 100% !important;
+    height: 100% !important; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+.selfIntro{
+  
+  z-index: 2;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+  flex-direction: column;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+}
+
+.selfIntro p {
+  font-size: 1rem;
+  color: #4b4453;
+  line-height: 1.5;
+  opacity: 1;
+  text-shadow: 2px 2px 4px #bbb8b8;
+}
+
+
+#myCarousel {
+  display: none;
+}
+
+.projects {
+  flex: 1;        
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneCards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;       
+  overflow-y: auto;   
+  width: 100%;
+}
+
+.phoneCards .card {
+  flex: 0 0 auto;
+  height: calc(100% / 1);  
+  min-height: 300px;      
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+
+}
