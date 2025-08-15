@@ -1,0 +1,141 @@
+html, body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #e6d9f5, #8f7a91, #2b232c);
+  position: relative; 
+  scrollbar-width: none;
+}
+
+body::before {
+  content: '';
+  position: fixed; 
+  overflow-y: hidden !important;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, #dcd8f0, #d5c9d8, #fffafc); 
+  z-index: 0; 
+  animation: fadeOut 3s ease forwards;
+  pointer-events: none; 
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+.navbar{
+     color:transparent !important;
+}
+
+.Welcome {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10vh;
+    color: #ffe5ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+   
+    
+}
+.btn{
+    background-color: #d5c9d8!important;
+    border-radius: 20px !important;
+    color: #48304b !important;
+    margin-top: 20vh;
+    width: 30vh;
+   
+}
+.btn:hover {
+    background-color: #b7a1b7 !important;
+    color: #2b232c !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.fade {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  overflow-y: hidden;
+  display: none;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+}
+
+#section1, #Projects {
+  position: relative; /* adjust to absolute if you want overlapping */
+}
+.projects { 
+   margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+.aiDroneSimulation{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('media/WhatsApp Image 2025-08-15 at 16.19.37.jpeg') center/cover;
+    width: 100%;
+    min-height: fit-content;
+    height: 70vh;
+    color: #ffe5ff;
+   
+}
+.card , .card-body {
+    border-radius: 30%;
+    background-color: transparent !important;
+    border: none !important;
+    margin-left: 5vh;
+   
+}
+
+
+#easein.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.orbitron-textBold {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;}
+
+  .orbitron-textNormal {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;}
+
+  .inbetween {
+  height: 20vh;
+  background: transparent;
+}
+
+.footer{
+  background-color:  #2b232c;
+  color: #d5c9d8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    margin-top: 10%;
+    align-items: center;
+
+  }
+  .card {
+    margin-left: 0%;
+    width: 80%;
+    
+  }
+}
