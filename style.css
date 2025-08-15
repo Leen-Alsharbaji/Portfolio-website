@@ -144,84 +144,96 @@ height: 100%;
   font-style: normal;
 }
 
+
+
 @media (max-width: 900px) {
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(to bottom, #dcd8f0, #d5c9d8, #fffafc);
+  background-size: 100% 300%; /* Covers 3x the height for smooth transition */
+  background-position: top;
+  transition: background-position 0.8s ease-out;
+  overflow-y: auto;
+}
+body.gradient-top {
+  background-position: top center;
+}
+
+body.gradient-bottom {
+  background-position: bottom center;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: auto;
+}
+
 
 
 .mainUpperhalf {
   display: flex;
   flex-direction: row;
-  flex: 1;
-  height:50%;
   width: 100%;
- 
-
 }
-  .model-container {
-    width: 100%;
-    height: 50vh;
-    position: relative; 
-   
 
-  }
+.model-container {
+  width: 100%;
+  position: relative; 
+}
 
-  .model-container canvas {
-    width: 100% !important;
-    height: 100% !important; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-.selfIntro{
-  
-  z-index: 2;
+.model-container canvas {
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.selfIntro {
   width: 50%;
-  height: 100%;
   padding-top: 5%;
   padding-bottom: 10%;
-  padding-left: 2%;
-  flex-direction: column;
-  background: transparent;
-  display: flex;
+  padding-left: 5%;
   align-items: flex-start;
+  background: transparent;
+  z-index: 2;
 }
 
 .selfIntro p {
   font-size: 1rem;
   color: #4b4453;
   line-height: 1.5;
-  opacity: 1;
   text-shadow: 2px 2px 4px #bbb8b8;
 }
 
 
-#myCarousel {
-  display: none;
-}
-
 .projects {
-  flex: 1;        
   padding: 2rem;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.phoneCards {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;       
-  overflow-y: auto;   
   width: 100%;
 }
 
-.phoneCards .card {
-  flex: 0 0 auto;
-  height: calc(100% / 1);  
-  min-height: 300px;      
+.phoneCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+ .card {
+  min-height: 250px;
+  width: 100%;
   margin-bottom: 1rem;
   box-sizing: border-box;
+}
+
+/* ===== Carousel (if needed) ===== */
+#myCarousel {
+  display: none;
 }
 
 

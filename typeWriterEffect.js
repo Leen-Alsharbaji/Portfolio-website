@@ -1,16 +1,23 @@
-var i = 0;
-var txt = '<strong>Hey there! What brings you here?</strong> Either way, welcome. Wanna see some <strong>cool stuff?</strong> Go ahead—click around, you might just like what you find.';
-var speed = 65;
+function typeWriter(elemId, speed = 65) {
+  let element = document.getElementById(elemId);
+  if (!element) return;
 
-function typeWriter() {
-  var typewriterElem = document.getElementById("typewriter");
-  if (typewriterElem && i < txt.length) {
-    // Display up to the ith character
-    typewriterElem.innerHTML = txt.substring(0, i) + '|'; 
-    i++;
-    setTimeout(typeWriter, speed);
-  } else {
-    typewriterElem.innerHTML = txt; 
+  let txt = element.innerHTML; 
+  element.innerHTML = ""; 
+  let i = 0;
+
+  function typing() {
+    if (i < txt.length) {
+      element.innerHTML = txt.substring(0, i) + '|';
+      i++;
+      setTimeout(typing, speed);
+    } else {
+      element.innerHTML = txt; 
+    }
   }
+
+  typing();
 }
-typeWriter();
+
+
+typeWriter("typewriter", 65);

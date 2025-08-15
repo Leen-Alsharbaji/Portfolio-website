@@ -14,7 +14,7 @@ var modelpath , positionX,positionY, positionZ,rotationX, rotationY, rotationZ ,
 
 console.log("im working babyyy");
 init();
-loadModel('tryForModel/ghoswithtexture1111t.gltf',3 ,-4,-3,0,-2,0,4.5,3.5,3.5);
+MobileModelposition();
 animate();
 
 
@@ -131,5 +131,17 @@ function animate() {
     
     renderer.render(scene, camera);
 
+}
+
+function MobileModelposition(){
+    if(window.innerWidth <= 786){
+        loadModel('tryForModel/ghoswithtexture1111t.gltf',-0.5, -1, -5, 0, -2, 0, 2.5,2.5, 2.5);
+        console.log("Mobile model loaded");
+
+    }
+    else {
+       loadModel('tryForModel/ghoswithtexture1111t.gltf',3 ,-4,-3,0,-2,0,4.5,3.5,3.5);
+       console.log("Desktop model loaded");
+    }
 }
 
