@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="gameDev.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="aiProjects">
+
+  <header class="w3-container">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <!-- ms-auto is Bootstrap's magic for "margin-start: auto" -->
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  
+  <script>
+    const easeinElements = document.querySelectorAll('.easein');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+
+  </script>
+  <script src="typeWriterEffect.js"></script>
+  <script>
+    document.body.addEventListener('click', (e) => {
+      if (e.target && e.target.id === 'hideBtn') {
+        const idsToHide = ['section1'];
+        const idsToShow = ['Projects'];
+
+        // hide sections
+        idsToHide.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.classList.remove('visible');
+            el.classList.add('fade');
+
+            // remove from layout after fade
+            el.addEventListener('transitionend', () => {
+              el.style.display = 'none';
+            }, { once: true });
+          }
+        });
+
+        // show sections
+        idsToShow.forEach(id => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.style.display = 'block'; // make it appear first
+            setTimeout(() => {
+              el.classList.remove('fade');
+              el.classList.add('visible');
+            }, 50); // small timeout ensures transition triggers
+          }
+        });
+        document.documentElement.style.overflowY = 'auto';
+        document.body.style.overflowY = 'auto';
+      }
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>]

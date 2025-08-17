@@ -20,4 +20,4 @@ function typeWriter(elemId, speed = 65) {
 }
 
 
-typeWriter("typewriter", 65);
+typeWriter("typewriter", 55);

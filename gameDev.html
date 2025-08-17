@@ -45,7 +45,7 @@
             <p class="orbitron-textBold">Welcome to Ren's Realm</p>
             <p class="orbitron-textNormal" style="font-size: 20px;">Hey, Player! This is where I haunt code and build
                 worlds. Want to see my loot?</p>
-            <button class="btn" id="hideBtn">Play</button>
+            <button class="btn gameDevBtn" id="hideBtn">Play</button>
         </div>
 
     </div>
@@ -53,62 +53,120 @@
 
 
     <div class="projects fade " id="Projects">
-        <h1 style="text-align: center; color:  #48304b " class="orbitron-textNormal" id="typewriter">Feel free to hangout here!</h1><br>
-        <section class="aiDroneSimulation">
-            <h2 class="orbitron-textBold">AI Drone</h2>
-            <p class="orbitron-textNormal" style="margin-top: 2%; line-height: 35px; width: 80%; margin-left: 2%; color: #ffe7ff; background-color: rgb(99, 99, 99, 0.7);">This
-                simulation showcases a military surveillance drone operating in a
-                virtual 3D environment, autonomously patrolling and capturing real-time footage using Unity. The drone
-                streams images to a Python server, where YOLOv8 performs real-time person detection and sends bounding
-                box data back to Unity for visualization. The system mimics real-world surveillance workflows, combining
-                AI-driven navigation, obstacle avoidance, and object detection for defense and security applications.
-            </p><br>
-            <p style="text-align: center;"><small><a href=""
-                        style="text-decoration: none; color: inherit; border-bottom: aliceblue 1px solid; ">GitHub
-                        Repository</a></small></p>
-        </section>
-    
-    <div class="inbetween"></div>
-    <section class="aiDroneSimulation easein" style="background: url('media/WhatsApp Image 2025-08-15 at 16.31.03.jpeg') center/cover, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));">
-        <h2 class="orbitron-textBold">Terrain Generation</h2>
-        <p class="orbitron-textNormal" style="margin-top: 2%; line-height: 35px; width: 80%; margin-left: 2%; color: #ffe7ff; background-color: rgb(99, 99, 99, 0.7);">This
-            project features a procedural terrain generator powered by Perlin noise algorithms, which dynamically
-            constructs realistic 3D landscapes with natural elevation variations. The system intelligently applies
-            height-based texture mapping to simulate biome-specific features—such as grass, sand, rock, and
-            water—enhancing visual fidelity through gradient-aware material blending. By integrating noise-based terrain
-            synthesis with physics-compliant erosion and sedimentation models, the generator produces geomorphologically
-            plausible environments for immersive military or surveillance training scenarios.
-        </p><br>
-        <p style="text-align: center;"><small><a href=""
-                    style="text-decoration: none; color: inherit; border-bottom: aliceblue 1px solid; ">GitHub
-                    Repository</a></small></p>
-    </section>
-      <div class="inbetween"></div>
-     <section class="aiDroneSimulation easein" style="background: url('media/WhatsApp Image 2025-08-15 at 16.23.59.jpeg') center/cover, linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));">
-        <h2 class="orbitron-textBold">Terrain Generation</h2>
-        <p class="orbitron-textNormal" style="margin-top: 2%; line-height: 35px; width: 80%; margin-left: 2%; color: #ffe7ff; background-color: rgb(99, 99, 99, 0.8);">This
-            simulation features a procedural terrain generator powered by Perlin noise algorithms, which dynamically
-            constructs realistic 3D landscapes with natural elevation variations. The system intelligently applies
-            height-based texture mapping to simulate biome-specific features—such as grass, sand, rock, and
-            water—enhancing visual fidelity through gradient-aware material blending. By integrating noise-based terrain
-            synthesis with physics-compliant erosion and sedimentation models, the generator produces geomorphologically
-            plausible environments for immersive military or surveillance training scenarios.
-        </p><br>
-        <p style="text-align: center;"><small><a href=""
-                    style="text-decoration: none; color: inherit; border-bottom: aliceblue 1px solid; ">GitHub
-                    Repository</a></small></p>
-    </section>
-     <div class="inbetween"></div>
-      <section class="aiDroneSimulation easein" style="background: url('media/WhatsApp Image 2025-08-15 at 16.25.23.jpeg') center/cover, linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));">
-        <h2 class="orbitron-textBold" style="color:#fff9ff;">Portfolio Museum</h2>
-       <iframe style="border: none; display: flex; width: 100%; height: 100%;" src="https://itch.io/embed/3194480"><a href="https://leen-alsharbaji.itch.io/portflio-game">portflio game by Leen-Alsharbaji</a></iframe>
-        <p style="text-align: center;"><small><a href=""
-                    style="text-decoration: none; color: inherit; border-bottom: aliceblue 1px solid; ">GitHub
-                    Repository</a></small></p>
-    </section>
+
+
+      
+
+
+
+
+
+
+
+<div class="projects " id="Projects" style="align-items: center !important; ">
+    <h1 style="text-align: center; color:  #48304b " class="orbitron-textBold" id="typewriter">Feel Free To Explore My Projects!</h1><br>
     <div class="inbetween"></div>
 
-</div>
+    <div class="row row-cols-1 row-cols-md-2 g-2" style="width: 100%;  ">
+      <div class="col">
+        <div class="card">
+          <img src="media/WhatsApp Image 2025-08-15 at 16.19.37.jpeg" class="card-img-top" alt="..."
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h2 class="orbitron-textBold">CV Drone Simulation</h2>
+            <p class="card-text">
+            <p>Real-time military surveillance simulator using <strong>Unity</strong> and <strong>YOLOv8</strong>, where
+              an AI drone streams footage via
+              TCP sockets to a Python server for person detection, with results visualized in the 3D environment. </p>
+
+            <img src="media/ultraliticsLogo.webp" style="width:50px ; height: 50px; border-radius: 50%;" alt=""> <img
+              src="media/unity logo.jpeg" alt="" style="width:50px ; height: 50px; border-radius: 50%;"></p>
+            <p><small><a href="" style="color: inherit;"> GitHub repository: </a></small></p>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="media/WhatsApp Image 2025-08-15 at 16.31.03.jpeg" class="card-img-top" alt="..."
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h2 class="orbitron-textBold">Terrain Generation</h2>
+            <p class="card-text">
+            </p> Procedural terrain generator that uses <strong>Perlin noise </strong>to create realistic 3D
+            landscapes with natural elevation changes. It dynamically applies <strong>biome-specific
+              textures</strong>—like grass, sand,
+            rock, and water—based on height and slope, while physics-based erosion adds geological realism. The result
+            is an immersive, dynamically generated environment </p><br>
+
+            <img src="media/unity logo.jpeg" alt="" style="width:50px ; height: 50px; border-radius: 50%;"></p>
+            <p><small><a href="" style="color: inherit;"> GitHub repository: </a></small></p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="media/WhatsApp Image 2025-08-15 at 16.23.59.jpeg" class="card-img-top" alt="..."
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h2 class="orbitron-textBold">NavMesh and Unity Agents</h2>
+            <p class="card-text">
+            </p> This project implements <strong>navigation and pathfinding for AI agents</strong> in a 3D environment
+            using
+            Unity's NavMesh system. It features dynamic <strong>obstacle avoidance, AI behavior modeling, multi-agent
+              coordination, and real-time
+              path recalculation</strong> to ensure smooth navigation in complex terrains. The AI agents can adapt to
+            changing
+            environments and collaborate to achieve common goals, making this a robust solution for realistic
+            simulations and games.</p><br>
+
+            <img src="media/unity logo.jpeg" alt="" style="width:50px ; height: 50px; border-radius: 50%;"></p>
+            <p><small><a href="" style="color: inherit;"> GitHub repository: </a></small></p>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="media/WhatsApp Image 2025-08-15 at 16.25.23.jpeg" class="card-img-top" alt="..."
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h2 class="orbitron-textBold">Portfolio Museum</h2>
+            <p class="card-text">
+            </p>Designed an immersive 3D museum in <strong>Unity</strong> to exhibit projects,<strong> implementing optimized
+            textures, dynamic lighting,</strong> and fluid first-person movement. Enhanced realism through modular world design
+            and performance-focused asset optimization."</p><br>
+
+            <img src="media/unity logo.jpeg" alt="" style="width:50px ; height: 50px; border-radius: 50%;"></p>
+            <p><small><a href="" style="color: inherit;"> GitHub repository: </a></small></p>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="inbetween fade"> <h2 class="orbitron-textBold" style="text-align: center; margin-top: 2vh;">Portfolio Museum Demo</h2></div>
+   
+  <section class="aiDroneSimulation easein fade"
+    style="background: url('media/WhatsApp Image 2025-08-15 at 16.25.23.jpeg') center/cover, linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));">
+    <iframe style="border: none; display: flex; width: 100%; height: 100%;" src="https://itch.io/embed/3194480"><a
+        href="https://leen-alsharbaji.itch.io/portflio-game">portflio game by Leen-Alsharbaji</a></iframe>
+    <p style="text-align: center;"><small><a href=""
+          style="text-decoration: none; color: inherit; border-bottom: aliceblue 1px solid; ">GitHub
+          Repository</a></small></p>
+  </section>
+  <div class="inbetween"></div>
+
+  </div>
 
 
 
@@ -127,7 +185,7 @@
 
 
 
-<footer class="footer">
+  <footer class="footer aiProjects">
     <p>&copy; 2025 My Portfolio</p>
   </footer>
 

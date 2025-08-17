@@ -10,6 +10,18 @@ html, body {
   scrollbar-width: none;
 }
 
+body.aiProjects {
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+background: linear-gradient(to bottom right, #f5d6eb, #cfd9ff, #a7b6e4);
+  position: relative; 
+  scrollbar-width: none;
+}
+
 body::before {
   content: '';
   position: fixed; 
@@ -36,14 +48,14 @@ body::before {
     font-weight: bold;
     text-align: center;
     margin-top: 10vh;
-    color: #ffe5ff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #48304b;
+    text-shadow: 2px 2px 4px rgba(138, 138, 138, 0.5);
     
    
     
 }
-.btn{
-    background-color: #d5c9d8!important;
+.gameDevBtn{
+    background-color: #8f7a91!important;
     border-radius: 20px !important;
     color: #48304b !important;
     margin-top: 20vh;
@@ -90,11 +102,14 @@ body::before {
    
 }
 .card , .card-body {
-    border-radius: 30%;
-    background-color: transparent !important;
+   
+    background: transparent!important;
     border: none !important;
     margin-left: 5vh;
    
+}
+.card{
+  background-color: rgb(230, 217, 245, 0.2) !important;
 }
 
 
@@ -134,7 +149,7 @@ body::before {
 
   }
   .card {
-    margin-left: 0%;
+ 
     width: 80%;
     
   }
