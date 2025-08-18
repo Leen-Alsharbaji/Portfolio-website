@@ -1,4 +1,4 @@
-function typeWriter(elemId, speed = 65) {
+function typeWriter(elemId, speed = 55) {
   let element = document.getElementById(elemId);
   if (!element) return;
 
@@ -20,4 +20,4 @@ function typeWriter(elemId, speed = 65) {
 }
 
 
-typeWriter("typewriter", 55);
+typeWriter("typewriter", 50);
