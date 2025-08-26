@@ -144,7 +144,15 @@ height: 100%;
   font-style: normal;
 }
 
-
+.btn:hover {
+  background-color: #d8bfd8 !important;
+  color: #2b232c !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn{
+  width: 200px;
+  height: 150;
+}
 
 @media (max-width: 900px) {
 html, body {
@@ -235,6 +243,8 @@ body.gradient-bottom {
 #myCarousel {
   display: none;
 }
-
+.btn{
+  width: 150px !important;
+}
 
 }
